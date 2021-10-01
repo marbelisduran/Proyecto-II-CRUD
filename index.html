@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Joyas Gaia</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <header>
+        <nav class='nav-contenedor'>
+            <img class='logo' src="logo.jpg">                
+            <h1>Joyas Gaia</h1>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="productoParaAgregar()">
+                    <div>
+                        <label for="producto">Producto</label>
+                        <input type="text" name="producto" id="producto">
+                    </div>
+                    <div>
+                        <label for="product">Descripcion</label>
+                        <input type="text" name="descripcion" id="descripcion">
+                    </div>
+                    <div>
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" name="cantidad" id="cantidad">
+                    </div>
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input type="number" name="precio" id="precio">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Guardar">
+                        <input type="reset" value="Reiniciar">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="ProductoEnTienda">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Descripcion</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+</html>
