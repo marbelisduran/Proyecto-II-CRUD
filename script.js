@@ -43,28 +43,10 @@ function editar(td){
     document.getElementById('descripcion').value = selectedRow.cells[1].innerHTML;
     document.getElementById('cantidad').value = selectedRow.cells[2].innerHTML;
     document.getElementById('precio').value = selectedRow.cells[3].innerHTML;
-}
 
-function registroFecha(formularioDeDatos){
-    selectedRow.cells[0].innerHTML = formularioDeDatosa.producto;
-    selectedRow.cells[1].innerHTML = formularioDeDatos.descripcion;
-    selectedRow.cells[2].innerHTML = formularioDeDatos.cantidad;
-    selectedRow.cells[3].innerHTML = formularioDeDatos.precio;
-}
-
-//Eliminar
-function eliminar(td){
-    if(confirm('se eliminara el registro')){
-        row = td.parentElement.parentElement;
-        document.getElementById('ProductoEnTienda').deleteRow(row.rowIndex);
-    }
-    restablecerFormulario();
-}
-
-//Restablecer
-function restablecerFormulario(){
-    document.getElementById('producto').value = '';
-    document.getElementById('descripcion').value = '';
-    document.getElementById('cantidad').value = '';
-    document.getElementById('precio').value = '';
-}
+    function registroFecha(formularioDeDatos){
+        selectedRow.cells[0].innerHTML = formularioDeDatosa.producto;
+        selectedRow.cells[1].innerHTML = formularioDeDatos.descripcion;
+        selectedRow.cells[2].innerHTML = formularioDeDatos.cantidad;
+        selectedRow.cells[3].innerHTML = formularioDeDatos.precio;
+    }  
